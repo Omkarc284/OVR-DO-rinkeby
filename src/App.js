@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import MainMint from './MainMint';
+
 
 function App() {
+  const [accounts, setAccounts] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='overlay'>
+      <div className='App'>
+        <div className='grid-container'>
+          <div className='grid-item grid-item-1'>
+            <div className='title'>OVR</div>
+            <div className='sub'>Dealership Minting Platform</div>
+          </div>
+          <div className='minter grid-item grid-item-2'>
+            <MainMint accounts={accounts} setAccounts={setAccounts} />
+          </div>
+         
+        </div>
+        
+      </div>
+      <div className='moving-background'></div>
     </div>
-  );
+  )
 }
 
 export default App;
