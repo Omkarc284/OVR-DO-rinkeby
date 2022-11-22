@@ -1,3 +1,5 @@
+## Purpose of the project: 
+create a dealer Membership registration using Onchain NFT on Rinkeby chain which allows a User to mint an Automobile dealership pass which can be used for many purposes...As rinkeby is deprecated it'll be moved to polygon mumbai testnet.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

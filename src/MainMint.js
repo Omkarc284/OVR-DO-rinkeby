@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Select from 'react-select';
 
 
-const DealerNFTAddress = process.env.CONTRACTADDR || '0x18EE446e8DCA4B057bF63958a82fCF41bA69ba8b';
+const DealerNFTAddress = process.env.CONTRACTADDR || '0x29b0823CC7145016A6Ada0De4B2d9B0B7fb3897d';
 const options = [
     { value: 'LMV', label: 'LMV - (Cars, SUVs, Jeeps)'},
     { value: 'MCWG', label: 'Motorcycles with/without gears'},
@@ -51,6 +51,23 @@ const MainMint = ({accounts, setAccounts}) => {
             }catch (error){
                 console.log("Error: ", error);
             }
+            // try {
+            //     // const response = await contract.searchByAddress(data.toString());
+            //     // const res = {
+            //     //     Brand: response.Brand,
+            //     //     WalletAddress: response.walletAddress,
+            //     // }
+            //     // console.log("Response; ", res);
+            //     // if(response._hex === "0x00"){
+            //     //     console.log("Allowed");
+            //     //     setAccounts(accounts);
+            //     // }else{
+            //     //     console.log("Not Allowed");
+            //     //     alert(`Account already registered/Onboarded!! Please Disconnect Metamask and try another account.\n You can view your nft at: 'https://testnets.opensea.io/collection/dealership-reg7-v2' `)
+            //     // }
+            // } catch (error) {
+            //     console.log("Error: ", error)
+            // }
             
             // await checkAccount(accounts[0]);
         }

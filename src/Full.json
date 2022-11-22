@@ -415,6 +415,57 @@
     {
       "inputs": [
         {
+          "internalType": "address",
+          "name": "holder",
+          "type": "address"
+        }
+      ],
+      "name": "searchByAddress",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "RegisteredName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "Brand",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "regId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "vehicleCat",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "addr",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "walletAddress",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct dealerNFT.Dealer",
+          "name": "_dealer",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
           "internalType": "string",
           "name": "_regId",
           "type": "string"

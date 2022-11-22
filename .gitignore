@@ -9,7 +9,8 @@
 /coverage
 
 # production
-
+nouse.txt
+just.txt
 # misc
 .DS_Store
 .env.local
